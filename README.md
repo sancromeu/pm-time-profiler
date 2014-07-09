@@ -123,7 +123,7 @@ vs.
 ```java
 public static TimeProfiler start(..., String trackingLabel)
 ```
-This label is meant to identify the **TimeProfiler** created (say, you provide as label the method name)
+This label is meant to identify the **TimeProfiler** created (say, you provide as label the name of the method being profiled)
 ```java
 public static TimeProfiler start(logger, DEBUG, “doWork”)
 ```
@@ -135,9 +135,9 @@ public String getEndMessage(String trackingLabel, long elapsed, TimeTracker.Type
 ```
 to be able to generate messages like
 ```stdout
-2000-01-01 ... [FINE] doWork: Tracking...
-2000-01-01 ... [FINE] doWork: So far 10ms
-2000-01-01 ... [FINE] doWork: Took 20ms
+2000-01-01 ... [DEBUG] doWork: Tracking...
+2000-01-01 ... [DEBUG] doWork: So far 10ms
+2000-01-01 ... [DEBUG] doWork: Took 20ms
 ```
 If you use a logger and/or configure a log format that provides execution information, you may choose to skip the tracking label. If you are using the StdOut **TimeProfiler** you may want to provide it.
 
