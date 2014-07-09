@@ -1,4 +1,4 @@
 pm-time-profiler
 ================
 
-Poor's Man Time Profiler for Java
+Poor Man's Time Profiler for Java
